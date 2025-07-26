@@ -9,8 +9,8 @@ function App() {
 
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'}>
-      <button onClick={() => setDarkMode(!darkMode)}>
-        {darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+      <button onClick={() => setDarkMode(!darkMode)} style={{ backgroundColor: "#6e6562", marginTop: "1rem", display: "block", margin: "0 auto" }} >
+        {darkMode ? 'Screen Mode: 🌞' : 'Screen Mode: 🌝'}
       </button>
 
       <UserProfile />
